@@ -1,0 +1,234 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px 100px;
+    color: white;
+    background-color: #000; /* Matches dark theme */
+    font-family: "Poppins", sans-serif;
+  }
+  
+  
+.about-title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+  z-index: 5; /* Ensure spacing below title */
+}
+
+.about-title h1 {
+  font-size: 64px;
+  font-weight: 700;
+  color: white;
+  line-height: 1.2;
+}
+
+.about-title h1 span {
+  color: #ff00ff; /* Purple/Pink accent */
+  text-shadow: 0px 0px 10px rgba(255, 0, 255, 0.6);
+}
+
+.about-title img {
+  margin-top: -60px; /* Adds space below the title */
+  /* Adjust size */
+  display: block; /* Ensures it behaves like a block element and doesn't overlap */
+  margin-left: 100px;
+  margin-right: auto;
+  position: absolute;
+   z-index: -1;
+}
+
+  .about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+
+  .about-left{
+    width: 25vw;
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  .about-left img {
+    
+    height: 100%; /* Adjusted size for the profile image */
+    /* border-radius: 50%; */
+
+    scale: 1.05;
+    position: absolute;
+    top: 0%;
+    right: -25%;
+
+  }
+  
+  .about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+  }
+
+  .about-para p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+    gap: 20px;
+    display: flex;
+    padding-bottom: 20px;
+    
+  }
+  
+  .about-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .skill {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+  }
+  
+  .skill::after {
+    content: "";
+    position: absolute;
+    left: 150px;
+    height: 4px;
+    background-color: white;
+    width: calc(100% - 150px);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+  }
+  .skill p{
+    min-width: 150px;
+    font-size: 24px;
+    font-size: 500;
+  }
+  .about-achievements {
+    display: flex;
+    justify-content: space-between; /* Ensures achievements are evenly spaced horizontally */
+    align-items: center;
+    gap: 30px; /* Adjust spacing between achievement items */
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .about-achievement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Adds smooth scaling effect */
+  }
+  
+  .about-achievement h1 {
+    font-size: 48px; /* Matches the large font size in your image */
+    font-weight: bold;
+    background: linear-gradient(270deg,#DF8908 50.41%, #B415FF 90.25%); /* Vibrant accent color */
+    background-clip: text;
+    -webkit-background-clip:text ;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+  }
+  
+  .about-achievement p {
+    font-size: 22px; /* Adjust font size for smaller text */
+    font-weight: 500;
+    color: white;
+    margin: 0;
+  }
+  
+  .about-achievements hr {
+    width: 1px; /* Set the width for a vertical line */
+    height: 50px; /* Adjust height to match your design */
+    background-color: white; /* Set the color of the line */
+    border: none; /* Remove default border styling */
+    margin: 0 20px; /* Add spacing between the achievements */
+  }
+  
+ 
+  .skill:hover{
+
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+  .about-achievement:hover{
+    transform: scale(1.12);
+    transition: 0.5s;
+  }
+  @media(max-width:768px){
+
+.about{
+
+  gap: 80px;
+  margin:50px 70px;
+  align-items: start;
+}
+.about-title h1{
+
+  font-size: 50px;
+  padding: 0;
+}
+.about-title img{
+
+  width: 130px;
+  right: -20px;
+}
+
+.about-section{
+  flex-direction: column;
+}
+.about-left{
+
+  display: none;
+}
+.about-para{
+  font-size: 18px;
+  line-height: 32px;
+}
+.about-skill{
+
+  gap: 20px;
+  align-items: center;
+}
+.about-skill p{
+
+  font-size: 20px;
+}
+
+.about-skill hr{
+
+  height: 6px;
+}
+.about-achievements{
+
+  justify-content: space-between;
+
+}
+
+.about-achievement{
+
+  gap: 10px;
+}
+.about-achievement h1{
+  font-size: 34px;
+  font-weight: 700;
+}
+.about-achievement p{
+  text-align: center;
+  font-size: 16px;
+}
+  }
+
+  
